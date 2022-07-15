@@ -54,13 +54,21 @@ body{
 }
 .container{
     width: 100%;
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
 }
 
-/* HEADER-CONTAINER */
+/* FIXED-CONTAINER */
 
+
+.fixed-container{
+    position: sticky;
+    background-color: aqua;
+    /* right: 0; */
+    top: 0;
+    width: 100%;
+}
 .header-container{
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
     margin: auto;
     width: 1200px;
     display: flex;
@@ -96,9 +104,22 @@ h1 a span{
     font-size: 15px;
     transition: 0.3s;
 }
+.navigation ul .king{
+    text-decoration: none;
+    color: #01b1d7;
+    padding: 20px;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+
+}
 .navigation ul li a:hover{
     color: #01b1d7;
 }
+
+/* HEADER-CONTAINER  */
+
+
+
 .header-details{
     /* outline: solid 2px black; */
     margin: auto;
@@ -367,12 +388,23 @@ h1 a span{
 }
 .portfolio-card ul li a{
     text-decoration: none;
-    color: black;
-    padding-left: 30px;
+    color: #444444;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 5px;
 }
+.portfolio-card ul .card-stay{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 30px;
+    background-color: #01b1d7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 .portfolio-card ul li a:hover{
-    color: #01b1d7;
-    text-decoration: underline;
+    color:#fff;
+    background-color: #01b1d7;
 }
 .portfolio-bottom{
     display: flex;
@@ -387,7 +419,8 @@ h1 a span{
 .port-image{
     position: relative;
     overflow: hidden;
-    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 9%);
+    transition: 0.3s;
 }
 .port-image img{
     max-width: 100%;
@@ -596,7 +629,7 @@ h1 a span{
     margin-bottom: 20px;
 }
 .contact-foot{
-    outline: 2px solid black;
+    /* outline: 2px solid black; */
     margin: auto;
     width: 1200px;
 }
@@ -683,6 +716,7 @@ form .name:focus{
 }
 .contact-button{
     text-align: center;
+    padding-bottom: 20px;
 }
 .contact-button button{
     border-radius: 4px;
@@ -695,4 +729,152 @@ form .name:focus{
 }
 .contact-button button:hover{
     background: #01b1d7;
+}
+
+/* FOOTER-CONTAINER */
+
+.footer-color{
+    background-color: #1f2627;
+}
+.footer-details{
+    /* outline: 2px solid black; */
+    margin: auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.footer-top{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+.footer-add{
+    /* outline: solid 2px black; */
+    width: 25%;
+    padding: 15px;
+}
+.footer-add h4{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.footer-add p{
+    font-size: 18px;
+    margin-top: 30px;
+}
+.footer-add-link{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.footer-add-link a{
+    margin: 5px;
+    text-decoration: none;
+    
+}
+.footer-add-link a i{
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #354144;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+.footer-add-link a i:hover{
+    background-color: #01b1d7;
+}
+.footer-link{
+    /* outline: solid 2px black; */
+    width: 20%;
+    padding: 15px;
+}
+.footer-link h5{
+    font-size: 20px;
+    margin:0px 15px 20px 15px;    
+}
+.footer-link ul{
+    list-style: none;
+}
+.footer-link li{
+    font-size: 16px;
+    padding: 10px;
+}
+.footer-link li i{
+    padding: 5px;
+}
+.footer-link li a{
+    text-decoration: none;
+    color: #fff;
+}
+.footer-link li a:hover{
+    color: #01b1d7;
+}
+.footer-news{
+    /* outline: solid 2px black; */
+    width: 35%;
+    padding: 15px;
+}
+.footer-news h5{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.footer-news p{
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.footer-news form{ 
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+}
+.footer-news form .foot-name{
+    font-size: 15px;
+    padding: 5px;
+    border: 0;
+}
+.footer-news form .foot-mail{
+    position: absolute;
+    top: 0;
+    right: -2px;
+    bottom: 0;
+    border: 0;
+    font-size: 16px;
+    padding: 0 20px;
+    background: #01b1d7;
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 0 5px 5px 0;
+    
+}
+form .foot-mail:hover{
+    background-color: #0187a4;
+}
+.footer-bottom{
+    background-color: #1f2627;
+}
+.foot-copy{
+    padding-top: 30px;
+    text-align: center;
+    color: #fff;
+}
+.foot-copy-link{
+    padding: 10px 0px 30px 0px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+.foot-copy-link a{
+    text-decoration: none;
+    color: #01b1d7;
+}
+.foot-copy-link a:hover{
+    color: #0187a4;
 }
