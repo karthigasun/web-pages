@@ -62,10 +62,10 @@ body{
 
 .fixed-container{
     position: sticky;
-    background-color: aqua;
-    /* right: 0; */
+    background-color: #fff;
     top: 0;
     width: 100%;
+    z-index: 97;
 }
 .header-container{
     /* outline: 2px solid black; */
@@ -133,7 +133,7 @@ h1 a span{
 }
 .header-details p{
     margin: 50px 230px 20px 230px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: "Raleway", sans-serif;
 }
 .header-details a{
@@ -877,4 +877,15 @@ form .foot-mail:hover{
 }
 .foot-copy-link a:hover{
     color: #0187a4;
+}
+.arrow-page a{
+    color: #fff;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    font-size: 20px;
+    background-color: #01b1d7;
+    padding: 8px;
+    text-decoration: none
+
 }
