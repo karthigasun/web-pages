@@ -424,7 +424,7 @@ h1 a span{
 }
 .port-image img{
     max-width: 100%;
-    transition: 0.3s;
+    transition: 2s;
 }
 .port-info{
     display: flex;
@@ -438,6 +438,7 @@ h1 a span{
     background-color: rgba(53, 65, 68, 0.6);
     align-items: center;
     opacity: 0;
+    transition: 0.3s;
 }
 .port-card:hover img{
     transform: scale(1.1);
